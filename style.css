@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #212A31;
+}
+
+.navbar {
+    background-color: #2E3944;
+    height: 9vh;
+    width: 100%;
+}
+
+.nav-items {
+    float: left;
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+}
+
+.responsive-box label {
+    display: none;
+}
+.responsive-box {
+    height: 100%;
+}
+.responsive-box input {
+    display: none;
+}
+
+.nav-items ul {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5%;
+
+}
+
+.nav-items ul li {
+    list-style: none;
+}
+
+.nav-items ul li a {
+    text-align: center;
+    margin: auto 10px;
+    text-decoration: none;
+    color: #D3D9D4;
+}
+
+.main {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main h1 {
+    color: #D3D9D4;
+
+}
+
+.card {
+    height: 70%;
+    width: 25%;
+    background-color: #2E3944;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card h2 {
+    color: #D3D9D4;
+    font-weight: 900;
+}
+
+.img-box {
+
+    width: 80%;
+    min-height: 30%;
+    background-color: #2E3944;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+
+
+}
+
+.img-box img {
+    /* width: 100%;
+    height: 100%; */
+    /* object-fit:cover; */
+    margin: auto;
+    border-radius: 10px;
+
+}
+
+.quote-box {
+    width: 80%;
+    min-height: 20%;
+    background-color: #124E66;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-box p {
+    text-align: center;
+    width: 95%;
+    color: #D3D9D4;
+
+}
+
+button {
+    padding: 10px 50px;
+    background-color: #124E66;
+    border: 0;
+    border-radius: 20px;
+    color: #D3D9D4;
+
+}
+
+
+
+@media all and (max-width:1024px) {
+    .card {
+        width: 50%;
+    }
+
+}
+
+@media all and (max-width:770px) {
+
+    .card {
+        width: 60%;
+    }
+
+    .nav-items ul {
+        display: block;
+        background-color: #212A31;
+        height: 45vh;
+        width: 35vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 1;
+    }
+
+    .responsive-box {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .nav-items ul li {
+        padding: 20px;
+        margin: 5% 0 1 0;
+
+    }
+    .responsive-box ul label{
+        position: relative;
+      display: flex;
+      justify-content: end;
+      margin: 5% 10%;
+    }
+   
+    .navbar label {
+        display: block;
+    }
+  
+
+    #checking:checked~ul {
+        right: 0;
+    }
+
+
+}
+
+@media all and (max-width:431px) {
+    .card {
+        width: 95%;
+    }
+
+}
